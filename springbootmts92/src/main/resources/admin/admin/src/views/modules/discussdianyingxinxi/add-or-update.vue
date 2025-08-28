@@ -206,7 +206,7 @@ export default {
           if(o=='reply'){
             this.ruleForm.reply = obj[o];
 	    this.ro.reply = true;
-            continue;
+
           }
         }
       }

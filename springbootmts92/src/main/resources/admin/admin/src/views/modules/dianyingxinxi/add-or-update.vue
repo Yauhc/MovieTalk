@@ -421,7 +421,7 @@ export default {
           if(o=='clicknum'){
             this.ruleForm.clicknum = obj[o];
 	    this.ro.clicknum = true;
-            continue;
+
           }
         }
       }

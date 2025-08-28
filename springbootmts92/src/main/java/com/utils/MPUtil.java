@@ -1,15 +1,13 @@
 package com.utils;
 
-import java.util.Arrays;
+import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.mapper.Wrapper;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import org.apache.commons.lang3.StringUtils;
-
-import cn.hutool.core.bean.BeanUtil;
-
-import com.baomidou.mybatisplus.mapper.Wrapper;
 
 /**
  * Mybatis-Plus工具类
@@ -125,9 +123,9 @@ public class MPUtil {
 			}
 			if(params.get("sort") != null && StringUtils.isNotBlank(params.get("sort").toString())) {
 				if(order.equalsIgnoreCase("desc")) {
-					wrapper.orderDesc(Arrays.asList(params.get("sort")));
+					wrapper.orderDesc(Collections.singletonList(params.get("sort")));
 				} else {
-					wrapper.orderAsc(Arrays.asList(params.get("sort")));
+					wrapper.orderAsc(Collections.singletonList(params.get("sort")));
 				}
 			}
 			return wrapper;

@@ -263,7 +263,7 @@ export default {
           if(o=='lianxidianhua'){
             this.ruleForm.lianxidianhua = obj[o];
 	    this.ro.lianxidianhua = true;
-            continue;
+
           }
         }
       }

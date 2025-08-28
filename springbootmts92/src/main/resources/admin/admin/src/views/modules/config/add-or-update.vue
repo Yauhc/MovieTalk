@@ -170,7 +170,7 @@ export default {
           if(o=='value'){
             this.ruleForm.value = obj[o];
 	    this.ro.value = true;
-            continue;
+
           }
         }
       }

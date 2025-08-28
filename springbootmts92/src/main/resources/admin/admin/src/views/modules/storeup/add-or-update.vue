@@ -223,7 +223,7 @@ export default {
           if(o=='picture'){
             this.ruleForm.picture = obj[o];
 	    this.ro.picture = true;
-            continue;
+
           }
         }
       }

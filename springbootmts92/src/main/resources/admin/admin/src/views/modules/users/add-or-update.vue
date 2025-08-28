@@ -174,7 +174,7 @@ export default {
           if(o=='role'){
             this.ruleForm.role = obj[o];
 	    this.ro.role = true;
-            continue;
+
           }
         }
       }

@@ -225,7 +225,7 @@ export default {
           if(o=='content'){
             this.ruleForm.content = obj[o];
 	    this.ro.content = true;
-            continue;
+
           }
         }
       }

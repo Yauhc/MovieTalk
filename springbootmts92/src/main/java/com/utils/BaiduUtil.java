@@ -1,5 +1,7 @@
 package com.utils;
 
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -7,8 +9,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.json.JSONObject;
 
 
 /**
@@ -87,7 +87,7 @@ public class BaiduUtil {
             String access_token = jsonObject.getString("access_token");
             return access_token;
         } catch (Exception e) {
-            System.err.printf("获取token失败！");
+            System.err.print("获取token失败！");
             e.printStackTrace(System.err);
         }
         return null;

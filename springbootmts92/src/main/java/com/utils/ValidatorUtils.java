@@ -2,19 +2,18 @@
 package com.utils;
 
 
-import java.util.Set;
+import com.entity.EIException;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
-
-import com.entity.EIException;
+import java.util.Set;
 
 /**
  * hibernate-validator校验工具类
  */
 public class ValidatorUtils {
-    private static Validator validator;
+    private static final Validator validator;
 
     static {
         validator = Validation.buildDefaultValidatorFactory().getValidator();
@@ -30,7 +29,7 @@ public class ValidatorUtils {
             throws EIException {
         Set<ConstraintViolation<Object>> constraintViolations = validator.validate(object, groups);
         if (!constraintViolations.isEmpty()) {
-        	ConstraintViolation<Object> constraint = (ConstraintViolation<Object>)constraintViolations.iterator().next();
+        	ConstraintViolation<Object> constraint = constraintViolations.iterator().next();
             throw new EIException(constraint.getMessage());
         }
     }

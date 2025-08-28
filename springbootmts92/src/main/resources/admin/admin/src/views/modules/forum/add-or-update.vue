@@ -226,7 +226,7 @@ export default {
           if(o=='isdone'){
             this.ruleForm.isdone = obj[o];
 	    this.ro.isdone = true;
-            continue;
+
           }
         }
       }

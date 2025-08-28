@@ -1,12 +1,11 @@
 
 package com.utils;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
+import com.baomidou.mybatisplus.plugins.Page;
 import org.apache.commons.lang3.StringUtils;
 
-import com.baomidou.mybatisplus.plugins.Page;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * 查询参数
@@ -16,7 +15,7 @@ public class Query<T> extends LinkedHashMap<String, Object> {
     /**
      * mybatis-plus分页参数
      */
-    private Page<T> page;
+    private final Page<T> page;
     /**
      * 当前页码
      */

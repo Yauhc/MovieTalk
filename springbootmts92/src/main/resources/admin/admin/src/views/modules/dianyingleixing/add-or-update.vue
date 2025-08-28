@@ -144,7 +144,7 @@ export default {
           if(o=='dianyingleixing'){
             this.ruleForm.dianyingleixing = obj[o];
 	    this.ro.dianyingleixing = true;
-            continue;
+
           }
         }
       }

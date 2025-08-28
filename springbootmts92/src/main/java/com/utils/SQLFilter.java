@@ -1,9 +1,8 @@
 
 package com.utils;
 
-import org.apache.commons.lang3.StringUtils;
-
 import com.entity.EIException;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * SQL过滤

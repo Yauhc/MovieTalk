@@ -1,5 +1,7 @@
 package com.utils;
 
+import com.annotation.LoginUser;
+
 public class JQPageInfo{
 	private Integer page;
 	
@@ -15,7 +17,7 @@ public class JQPageInfo{
 		return page;
 	}
 
-	public void setPage(Integer page) {
+	public void setPage(@LoginUser Integer page) {
 		this.page = page;
 	}
 

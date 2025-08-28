@@ -1,22 +1,20 @@
 package com.service.impl;
 
-import org.springframework.stereotype.Service;
-import java.util.Map;
-import java.util.List;
-
-import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.utils.PageUtils;
-import com.utils.Query;
-
-
 import com.dao.NewsDao;
 import com.entity.NewsEntity;
-import com.service.NewsService;
-import com.entity.vo.NewsVO;
 import com.entity.view.NewsView;
+import com.entity.vo.NewsVO;
+import com.service.NewsService;
+import com.utils.PageUtils;
+import com.utils.Query;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Map;
 
 @Service("newsService")
 public class NewsServiceImpl extends ServiceImpl<NewsDao, NewsEntity> implements NewsService {
