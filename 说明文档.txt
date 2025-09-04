@@ -1,21 +1,18 @@
-ÍÆ¼öÊ¹ÓÃ£º¹È¸èä¯ÀÀÆ÷
+æ¨èä½¿ç”¨ï¼šè°·æ­Œæµè§ˆå™¨
 
 
-ºóÌ¨µØÖ·
+åå°åœ°å€
 http://localhost:8080/springbootmts92/admin/dist/index.html
 
-¹ÜÀíÔ±  abo ÃÜÂë abo
+ç®¡ç†å‘˜  abo å¯†ç  abo
 
 
-Ç°Ì¨µØÖ·£ºhttp://localhost:8080/springbootmts92/front/index.html
+å‰å°åœ°å€ï¼šhttp://localhost:8080/springbootmts92/front/index.html
 
 
  
-ÔÚsrc\main\resources\application.ymlÖĞ±à¼­
+åœ¨src\main\resources\application.ymlä¸­ç¼–è¾‘
 											
 	 url: jdbc:mysql://127.0.0.1:3306/springbootmts92?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         username: root
-        password: 123456 £¨Êı¾İ¿âÃÜÂë£©
-
-
- 
+        password: 123456 ï¼ˆæ•°æ®åº“å¯†ç ï¼‰
